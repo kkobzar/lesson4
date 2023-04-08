@@ -1,16 +1,19 @@
-# This is a sample Python script.
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def walk(self):
+        print("walking")
+
+class Student(Person):
+    mark = 1
+    def __init__(self,name):
+        super().__init__(name, 15)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+good_student1 = Student("Sasha")
+good_student2 = Student("Slavik")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(good_student1.age)
