@@ -24,4 +24,8 @@ class Teacher(Person):
 good_student1 = Student("Sasha")
 good_student2 = Student("Slavik")
 
-print(good_student1.age)
+teacher = Teacher('Kyryl')
+print(good_student1.mark)
+teacher.give_mark(good_student1)
+teacher.give_mark(good_student2)
+print(good_student1.mark)
